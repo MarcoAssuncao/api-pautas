@@ -9,7 +9,7 @@ public class OutAssociadoVO implements Serializable {
 	private Integer codigoAssociado;
 	private String nome;
 	private String cpfAtivo;
-	
+	private String  messageErro;
 	
 	public Integer getCodigoAssociado() {
 		return codigoAssociado;
@@ -29,4 +29,11 @@ public class OutAssociadoVO implements Serializable {
 	public void setCpfAtivo(String cpfAtivo) {
 		this.cpfAtivo = cpfAtivo;
 	}
+	public String getMessageErro() {
+		return messageErro;
+	}
+	public void setMessageErro(String messageErro) {
+		this.messageErro = messageErro;
+	}
+	
 }

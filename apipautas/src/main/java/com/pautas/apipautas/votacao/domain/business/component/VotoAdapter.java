@@ -1,4 +1,4 @@
-package com.pautas.apipautas.votacao.domain.business;
+package com.pautas.apipautas.votacao.domain.business.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -2,13 +2,15 @@ package com.pautas.apipautas.votacao.domain.vo;
 
 import java.io.Serializable;
 
-public class OutVotoVO implements Serializable {
+
+public class OutVotoVO  implements Serializable {
 
 	private static final long serialVersionUID = -7227450184605271819L;
 	
 	private Integer codigoVoto;
 	private Integer codigoPauta;
 	private String  cpfAssociado;
+	private String  messageErro;
 	
 	public Integer getCodigoVoto() {
 		return codigoVoto;
@@ -28,4 +30,12 @@ public class OutVotoVO implements Serializable {
 	public void setCpfAssociado(String cpfAssociado) {
 		this.cpfAssociado = cpfAssociado;
 	}
+	
+	public String getMessageErro() {
+		return messageErro;
+	}
+	public void setMessageErro(String messageErro) {
+		this.messageErro = messageErro;
+	}
+	
 }

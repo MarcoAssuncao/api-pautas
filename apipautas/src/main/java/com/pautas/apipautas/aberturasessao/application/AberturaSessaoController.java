@@ -1,5 +1,6 @@
 package com.pautas.apipautas.aberturasessao.application;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ public class AberturaSessaoController {
 
 	private AberturaSessaoService service;
 	
+	@PostMapping
 	public OutAberturaSessaoVO cicloDeVotacao(InAberturaSessaoVO in) {
 		
 		return service.abrirEfecharSessaoVotacao(in);

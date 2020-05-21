@@ -1,4 +1,4 @@
-package com.pautas.apipautas.associado.domain.business;
+package com.pautas.apipautas.associado.domain.business.component;
 
 import org.springframework.stereotype.Component;
 

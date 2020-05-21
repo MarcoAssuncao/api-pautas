@@ -1,6 +1,7 @@
 package com.pautas.apipautas.associado.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,6 +20,7 @@ public class AssociadoController {
 		this.service = service;
 	}
 
+	@PostMapping
 	public OutAssociadoVO salvar(InAssociadoVO associadoVO) {		
 		
 		return service.save(associadoVO);

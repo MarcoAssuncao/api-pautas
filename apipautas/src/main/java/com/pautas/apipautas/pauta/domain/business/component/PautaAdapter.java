@@ -1,4 +1,4 @@
-package com.pautas.apipautas.pauta.domain.business;
+package com.pautas.apipautas.pauta.domain.business.component;
 
 import java.time.LocalDate;
 

@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pautas.apipautas.pauta.domain.PautaIRepository;
-import com.pautas.apipautas.pauta.domain.business.PautaAdapter;
+import com.pautas.apipautas.pauta.domain.business.component.PautaAdapter;
 import com.pautas.apipautas.pauta.domain.entity.Pauta;
 import com.pautas.apipautas.pauta.domain.vo.InPautaVo;
 import com.pautas.apipautas.pauta.domain.vo.OutPautaVO;

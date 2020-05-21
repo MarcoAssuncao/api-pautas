@@ -22,7 +22,7 @@ public class ExibeVotacaoService {
 	}
 
 	public OutExibeVotacaoVO exibirResultadoVotacaoPauta() {	
-		List<Voto> votosValidos = votoService.findByUltimaPautaEncerrada(1);
+		List<Voto> votosValidos = votoService.findByUltimaPautaEncerrada();
 		return montarExibirResultadoVotacao(votosValidos);
 	}
 	
