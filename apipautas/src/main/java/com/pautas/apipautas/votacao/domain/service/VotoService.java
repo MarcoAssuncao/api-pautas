@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import com.pautas.apipautas.pauta.domain.business.workflow.PautaNotification;
@@ -32,6 +33,7 @@ public class VotoService {
 		this.notificacao = notificacao;
 	}
 	
+	@Transactional
 	public OutVotoVO save(InVotoVO votoVO) {
 		
 		String message = validator.isValid(votoVO);

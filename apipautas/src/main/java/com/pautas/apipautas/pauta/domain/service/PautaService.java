@@ -2,6 +2,7 @@ package com.pautas.apipautas.pauta.domain.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.pautas.apipautas.pauta.domain.PautaIRepository;
 import com.pautas.apipautas.pauta.domain.business.component.PautaAdapter;
@@ -21,6 +22,7 @@ public class PautaService {
 		this.pautaAdapter = pautaAdapter;
 	}
 
+	@Transactional
 	public OutPautaVO save(InPautaVo pautaVo) {
 		Pauta pautaConvert = pautaAdapter.convertToEntity(pautaVo);
 		Pauta pautaSaved = repository.save(pautaConvert);

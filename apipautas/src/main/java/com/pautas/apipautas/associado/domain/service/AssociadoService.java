@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import com.pautas.apipautas.associado.domain.AssociadoIRepository;
@@ -29,6 +30,7 @@ public class AssociadoService {
 		this.validator = validator;
 	}
 
+	@Transactional
 	public OutAssociadoVO save(InAssociadoVO associadoVO) {
 		
 		String message = validator.isValid(associadoVO.getCpf());
