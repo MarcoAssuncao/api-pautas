@@ -61,4 +61,9 @@ public class Voto implements Serializable {
 	public void setPauta(Pauta pauta) {
 		this.pauta = pauta;
 	}
+	@Override
+	public String toString() {
+		return "Voto [id=" + id + ", opcaoVoto=" + opcaoVoto + "]";
+	}
+	
 }

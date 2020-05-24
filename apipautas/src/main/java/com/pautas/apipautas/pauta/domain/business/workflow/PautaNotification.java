@@ -17,7 +17,8 @@ public class PautaNotification {
 	}
 
 	public String notificarEncerramentoVotacao(Integer codigoPauta) {
-		boolean pautaEncerrada = repository.existsPautaByIdAndSituacaoPauta(codigoPauta, SituacaoPautaEnum.ENCERRADA);
+		boolean pautaEncerrada = repository
+				.existsPautaByIdAndSituacaoPauta(codigoPauta, SituacaoPautaEnum.ENCERRADA);
 		if(pautaEncerrada) {
 			return "Tempo de Votação Encerrado!";
 		}

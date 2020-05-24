@@ -2,13 +2,24 @@ package com.pautas.apipautas.associado.domain.vo;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreType
 public class OutAssociadoVO implements Serializable {
 
 	private static final long serialVersionUID = 2854726448211176884L;
 	
+	@JsonProperty("id_associado")
 	private Integer codigoAssociado;
+
+	@JsonProperty("nome_associado")
 	private String nome;
+
+	@JsonProperty("cpf_ativo")
 	private String cpfAtivo;
+
+	@JsonProperty("mensagem_erro")
 	private String  messageErro;
 	
 	public Integer getCodigoAssociado() {
@@ -36,4 +47,11 @@ public class OutAssociadoVO implements Serializable {
 		this.messageErro = messageErro;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "OutAssociadoVO [codigoAssociado=" + codigoAssociado + ", nome=" + nome + ", cpfAtivo=" + cpfAtivo
+				+ ", messageErro=" + messageErro + "]";
+	}
+		
 }

@@ -27,9 +27,12 @@ public class Pauta implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
+	
 	private String  descricao;
+	
 	@Enumerated(value = EnumType.STRING)
 	private SituacaoPautaEnum  situacaoPauta;
+	
 	private LocalDate dataCriacao;
 	
 	@OneToMany
@@ -65,4 +68,12 @@ public class Pauta implements Serializable {
 	public void setAssociados(Set<Associado> associados) {
 		this.associados = associados;
 	}
+	
+	@Override
+	public String toString() {
+		return "Pauta [id=" + id + ", descricao=" + descricao + ", situacaoPauta=" + situacaoPauta + ", dataCriacao="
+				+ dataCriacao + "]";
+	}
+	
+	
 }

@@ -30,12 +30,12 @@ public class PautaService {
 	}
 	
 	public Pauta abrirPauta(Pauta pauta) {
-		//TODO
+
 		return repository.saveAndFlush(pauta);
 	}
 	
 	public Pauta encerrarPauta(Pauta pauta) {
-		// TODO
+	
 		return repository.saveAndFlush(pauta);
 	}
 	public Pauta findById(Integer id) {
