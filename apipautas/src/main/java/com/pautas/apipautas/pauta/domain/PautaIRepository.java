@@ -9,5 +9,6 @@ import com.pautas.apipautas.pauta.domain.entity.SituacaoPautaEnum;
 @Repository
 public interface PautaIRepository extends JpaRepository<Pauta, Integer> {
 
+	
 	boolean existsPautaByIdAndSituacaoPauta(Integer id, SituacaoPautaEnum situacao);
 }
